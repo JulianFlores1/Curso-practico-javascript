@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/estilos.css" rel="stylesheet">
+    <title>Medias medianas y moda</title>
+</head>
+<body>
+  <header class="header">
+    <div class="menu">
+    <h1>Curso practico de javascript</h1>
+    <nav class="nav">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/taller 1/figuras.html">Taller 1</a></li>
+            <li><a href="/taller 2/descuentos.html">Taller 2</a></li>
+            <li><a href="/taller 3/promedio.html">Taller 3</a></li>
+        </ul>
+    </nav>
+     </div>
+</header>
+    <div class="caja-taller3">
+        <h2>Calcula el promedio, media y moda con un click</h2>
+          <div class="card">
+            <p class="titulo">Promedio, media y moda</p>
+            <form action="" class="card--form">
+              <div class="inputtaller3">
+                <input class="input-taller3"
+                  type="text"
+                  placeholder="Ej: 20, 12, 120, 021"
+                  id="datos"
+                  class="input"
+                />
+              </div>
+              <div class="card--buttons">
+                <button
+                  type="button"
+                  class="boton-taller3"
+                  onclick="calcularMediaAritmetica()"
+                >
+                  Media
+                </button>
+                <button
+                  type="button"
+                  class="boton-taller3"
+                  onclick="calcularMediana()"
+                >
+                  Mediana
+                </button>
+                <button
+                  type="button"
+                  class="boton-taller3"
+                  onclick=""
+                >
+                  Moda
+                </button>
+              </div>
+              <div class="resultado">
+                <p class="text-result" id="resultEstadistica"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <footer>
+          <a href="https://www.linkedin.com/in/julianflores/"><img src="/img/linkedin.png" alt="" class="imagen-ln"></a>
+          <p>&copy; 2021 - Desarrollado por Julián Flores</p>
+          <a href="https://github.com/JulianFlores1"><img src="/img/logotipo-de-github.png" alt="" class="imagen-github"></a>
+       </footer>
+
+    <script src="./promedio.js"></script>
+</body>
+</html>

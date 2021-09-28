@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/estilos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu">
+        <h1>Curso practico de javascript</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/taller 1/figuras.html">Taller 1</a></li>
+                <li><a href="/taller 2/descuentos.html">Taller 2</a></li>
+                <li><a href="/taller 3/promedio.html">Taller 3</a></li>
+            </ul>
+        </nav>
+         </div>
+    </header>
+    
+    <section class="section-taller2">  
+        <div class="caja-taller2">
+        <h2>Calcula el precio a pagar de tus productos con descuentos</h2>
+      
+        <form>
+            <label class="label-taller2" for="InputPrecio">Escribe el precio de tus productos</label>
+            <input type="number" name="" id="InputPrecio" class="input-taller2">
+
+            <label class="label-taller2" for="InputDescuento">Escribe el descuento de tu producto</label>
+            <input type="number" name="" id="InputDescuento" class="input-taller2">
+
+            <button class="boton-taller2" type="button" onclick="BotonCalcularPrecioConD()">Calcular precio con descuento</button>
+
+            <div class="resultado">
+            <p>Resultado:</p>
+            <p id="ResultadoP"></p>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/julianflores/"><img src="/img/linkedin.png" alt="" class="imagen-ln"></a>
+        <p>&copy; 2021 - Desarrollado por Julián Flores</p>
+        <a href="https://github.com/JulianFlores1"><img src="/img/logotipo-de-github.png" alt="" class="imagen-github"></a>
+     </footer>
+
+
+
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/estilos.css" rel="stylesheet">
+    <title>Figuras geometricas</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu">
+        <h1>Figuras Geometricas</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/taller 1/figuras.html">Taller 1</a></li>
+                <li><a href="/taller 2/descuentos.html">Taller 2</a></li>
+                <li><a href="/taller 3/promedio.html">Taller 3</a></li>
+            </ul>
+        </nav>
+         </div>
+    </header>
+
+    <section>
+    <div class="contenedor-cajas-figuras">
+
+    <div class="caja-figuras">
+    <h2>Calcula el perimetro y el area de un cuadrado</h2>
+    <form >
+        <label for="InputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado
+        </label>
+        <input type="number" name="" id="ladoCuadrado" class="input-figuras">
+        <button class="boton-figuras" type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+        <button class="boton-figuras" type="button" onclick="calcularAreaCuadrado()">Cacular area</button>
+
+
+        <p id="resultCuadrado"></p>
+    </form>
+
+</div>
+    <div class="caja-figuras">
+    <h2>Calcula el perimetro y el area de un triangulo</h2>
+    <form>
+        <label for="ladoATriangulo"> Lado 1</label>
+        <input type="number" name="" id="ladoATriangulo" class="input-figuras">
+
+        <label for="ladoBTriangulo">Lado 2</label>
+        <input type="number" name="" id="ladoBTriangulo" class="input-figuras">
+
+        <label for="baseTriangulo">Base</label>
+        <input type="number" name="" id="baseTriangulo" class="input-figuras">
+
+        <button class="boton-figuras" type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+        <button class="boton-figuras" type="button" onclick="calcularAreaTriangulo()">Calcular area</button>
+
+        <p id="resultTriangulo"></p>
+    </form>
+</div>
+
+<div class="caja-figuras">
+    <h2>Calcula el diametro, el area y el perimetro del circulo</h2>
+    <form>
+        <label for="radioCirculo">
+            Escribe cuanto mide el radio de tu circulo
+        </label>
+        <input type="number" name="" id="radioCirculo" class="input-figuras">
+        <button class="boton-figuras" type="button" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+        <button  class="boton-figuras" type="button" onclick="calcularAreaCirculo()">Calcular area</button>
+        <button class="boton-figuras" type="button" onclick="calcularDiametroCirculo()">Calcular diametro</button>
+
+        <p id="resultCirculo"></p>
+    </form>
+</div>
+</div>
+    </section>
+    <footer>
+        <a href="https://www.linkedin.com/in/julianflores/"><img src="/img/linkedin.png" alt="" class="imagen-ln"></a>
+        <p>&copy; 2021 - Desarrollado por Julián Flores</p>
+        <a href="https://github.com/JulianFlores1"><img src="/img/logotipo-de-github.png" alt="" class="imagen-github"></a>
+     </footer>
+    
+    <script src="./figuras.js"></script>
+</body>
+</html>
